@@ -26,14 +26,14 @@ class Product
     @id = SqlRunner.run( sql, values)[0]["id"].to_i()
   end
 
-  # def customer()
-  #   sql = "SELECT * FROM customers
-  #   WHERE id = $1"
-  #   values = [@customer_id]
-  #   customer = SqlRunner.run (sql, values)
-  #   result = Customer.new( customer.first )
-  #   return result
-  # end
+  def customer()
+    sql = "SELECT * FROM customers
+    WHERE id = $1"
+    values = [@customer_id]
+    customer = SqlRunner.run(sql, values)
+    result = Customer.new( customer.first )
+    return result
+  end
   #
   # def update()
   #   sql = "UPDATE products SET name = $1, total_stock = $2, stock_price = $3 WHERE id = $4"

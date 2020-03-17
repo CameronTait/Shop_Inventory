@@ -18,14 +18,15 @@ class Customer
     @id = SqlRunner.run(sql, values)[0]["id"].to_i()
   end
 
-  # def products()
-  #   sql = "SELECT * FROM products"
-  #   WHERE customer_id = $1"
-  #   values = [@id]
-  #   products = SqlRunner.run( sql, values)
-  #   result = products.map { |product_hash| Product.new ( product_hash) }
-  #   return result
-  # end
+  def products()
+    sql = "SELECT * FROM products
+    WHERE customer_id = $1"
+    values = [@id]
+    product = SqlRunner.run( sql, values)
+    result = product.map { |product_hash| Product.new ( product_hash) }
+    return result
+  end
+
   #
   # def update()
   #   sql = "UPDATE customers SET name = $1 WHERE id = $2"
