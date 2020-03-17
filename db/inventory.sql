@@ -10,7 +10,7 @@ CREATE TABLE products (
   stock_level VARCHAR,
   stock_price FLOAT,
   monthly_return FLOAT,
-  subscriber_id INT REFERENCES subscribers(id) ON DELETE CASCADE,
+  subscriber_id INT REFERENCES customers(id) ON DELETE CASCADE,
 
 );
 
@@ -18,6 +18,6 @@ CREATE TABLE customers (
   id SERIAL primary key,
   name VARCHAR(255) not null,
   product_purchased VARCHAR(255),
-  purchase_date VARCHAR(255)
+  purchase_date VARCHAR(255),
   product_id INT REFERENCES products(id) ON DELETE CASCADE
 );
