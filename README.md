@@ -18,6 +18,55 @@ Build an app which allows a shopkeeper to track their shop's inventory. This is 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Possible Extensions
 
 * Calculate and display current total income per product.
