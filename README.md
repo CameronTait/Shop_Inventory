@@ -8,13 +8,28 @@ Build an app which allows a shopkeeper to track their shop's inventory. This is 
 
 * The inventory should track individual products, including a name, total stock quantity, stock currently leased, stock still available, and selling price.
 
-* The inventory should track customers, including a name, and which products they are subscribed to.
+* The inventory should track customers, including a name, and which products they are subscribed to. DONE
 
 * The shop can sell anything you like, but you should be able to create and edit customers and products separately.
 
-* Show an inventory page, listing all the details for all the products in stock in a single view.
+* Show an inventory page, listing all the details for all the products in stock in a single view. DONE
 
 * As well as showing stock quantity as a number, the app should visually highlight "low stock" and "out of stock" items to the user.
+
+#### Priority List
+
+1. For the products - render the stock and selling price (any thing from the database)
+
+2. In the seed file - create a dummy 'No customer' entry
+
+3. Create New Customers
+    - a form which will enable you to put in new customer details (name)
+    - Post that to the database so that it saves
+
+4. Create New Products
+    - a form which will be able to create a new product (including all the details)
+    - Make sure new products are assigned to the 'No Customer' entry
+
 
 
 
