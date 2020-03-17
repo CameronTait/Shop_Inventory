@@ -3,6 +3,8 @@
 <ul>
 <% @products.each do |product| %>
   <li><%= product.name %></li>
-  <a href="/products/<%= product.id %>">Show More</a>
+  <li>Total Stock <%= product.total_stock %></li>
+  <li>Product Price <%= product.stock_price %></li>
+  <a href="/products/<%= product.id %>">Show Current Subscribers</a>
 <% end %>
 </ul>

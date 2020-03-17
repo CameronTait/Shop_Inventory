@@ -31,30 +31,30 @@ customer4.save()
 
 
 product1 = Product.new({
-  "name" => "SECRET D",
+  "name" => "Secret Product D",
   "total_stock" => 5,
   "leased_stock" => 0,
-  "stock_price" => 10000,
+  "stock_price" => 100,
   "customer_id" => customer1.id
 })
 
 product1.save()
 
 product1 = Product.new({
-  "name" => "SECRET B",
-  "total_stock" => 10,
+  "name" => "Secret Product R",
+  "total_stock" => 8,
   "leased_stock" => 0,
-  "stock_price" => 50000,
+  "stock_price" => 120,
   "customer_id" => customer2.id
 })
 
 product1.save()
 
 product1 = Product.new({
-  "name" => "SECRET I",
-  "total_stock" => 3,
+  "name" => "SECRET F",
+  "total_stock" => 4,
   "leased_stock" => 0,
-  "stock_price" => 20000,
+  "stock_price" => 350,
   "customer_id" => customer3.id
 })
 
