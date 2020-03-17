@@ -13,7 +13,6 @@ class Product
     @current_stock = options['current_stock']
     @stock_level = options['stock_level']
     @stock_price = options['stock_price']
-    @monthly_return = options['monthly_return']
   end
 
   def save()
@@ -22,6 +21,8 @@ class Product
     VALUES
     ($1, $2, $3)
     RETURNING id"
+    values = [@name, @total_stock, @stock_price]
+    @id = SqlRunner.run( sql, values)[0]["id"].to_i()
   end
 
   def customer()

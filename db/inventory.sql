@@ -9,8 +9,7 @@ CREATE TABLE products (
   current_stock INT,
   stock_level VARCHAR,
   stock_price FLOAT,
-  monthly_return FLOAT,
-  subscriber_id INT REFERENCES customers(id) ON DELETE CASCADE,
+  subscriber_id INT REFERENCES customers(id) ON DELETE CASCADE
 
 );
 

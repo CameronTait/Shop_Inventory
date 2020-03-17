@@ -14,7 +14,6 @@ Product1 = Product.new({
   "current_stock" => 42424242,
   "stock_level" => "stock level is ",
   "stock_price" => 100,
-  "monthly_return" => "leased stock * stock price",
   "current_subscribers" => "names of current subscribers"
 })
 
@@ -27,7 +26,6 @@ Product2 = Product.new({
   "current_stock" => 42424242,
   "stock_level" => "stock level is...",
   "stock_price" => 90,
-  "monthly_return" => "leased stock * stock price",
   "current_subscribers" => "names of current subscribers"
 })
 
@@ -40,7 +38,6 @@ Product3 = Product.new({
   "current_stock" => 42424242,
   "stock_level" => "stock level is...",
   "stock_price" => 300,
-  "monthly_return" => "leased stock * stock price",
   "current_subscribers" => "names of current subscribers"
 })
 
@@ -53,7 +50,6 @@ Product4 = Product.new({
   "current_stock" => 42424242,
   "stock_level" => "stock level is...",
   "stock_price" => 15,
-  "monthly_return" => "leased stock * stock price",
   "current_subscribers" => "names of current subscribers"
 })
 
