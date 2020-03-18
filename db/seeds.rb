@@ -5,6 +5,13 @@ require("pry-byebug")
 Product.delete_all()
 Customer.delete_all()
 
+
+customer5 = Customer.new({
+  "name" => "No Customer"
+  })
+
+  customer5.save()
+
 customer1 = Customer.new({
   "name" => "Nathan"
 })

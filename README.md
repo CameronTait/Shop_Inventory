@@ -18,9 +18,9 @@ Build an app which allows a shopkeeper to track their shop's inventory. This is 
 
 #### Priority List
 
-1. For the products - render the stock and selling price (any thing from the database)
+1. For the products - render the stock and selling price (any thing from the database) - DONE
 
-2. In the seed file - create a dummy 'No customer' entry
+2. In the seed file - create a dummy 'No customer' entry - DONE
 
 3. Create New Customers
     - a form which will enable you to put in new customer details (name)
