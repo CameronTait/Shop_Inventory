@@ -2,7 +2,7 @@ require_relative( '../db/sql_runner' )
 
 class Product
 
-  attr_reader( :id, :name, :total_stock, :stock_price, :customer_id )
+  attr_reader( :id, :name, :total_stock, :leased_stock, :stock_price, :customer_id )
 
   def initialize( options )
     @id = options['id'].to_i if options['id']
@@ -35,11 +35,11 @@ class Product
     return result
   end
   #
-  # def update()
-  #   sql = "UPDATE products SET name = $1, total_stock = $2, stock_price = $3 WHERE id = $4"
-  #   values = [@name, @total_stock, @stock_price, @id]
-  #   SqlRunner.run(sql, values)
-  # end
+  def update()
+    sql = "UPDATE products SET name = $1, total_stock = $2, stock_price = $3, customer_id = $4 WHERE id = $5"
+    values = [@name, @total_stock, @stock_price, @customer_id, @id]
+    SqlRunner.run(sql, values)
+  end
   #
   # def delete()
   #   sql = "DELETE FROM products where id = $1"

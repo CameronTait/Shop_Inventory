@@ -1,0 +1,53 @@
+<p> edit product: </p>
+
+<form method="post" action="/products/<%= @product.id %>">
+  <label for="name-field">Product Name:</label>
+  <input
+  type="text"
+  name="name"
+  id="name-field"
+  value="<%= @product.name %>"
+  />
+
+
+    <label for="total_stock-field">Total Stock:</label>
+    <input
+    type="number"
+    name="total_stock"
+    id="total_stock-field"
+    value="<%= @product.total_stock %>"
+    />
+
+
+    <label for="leased_stock-field">Leased Stock:</label>
+    <input
+    type="number"
+    name="leased_stock"
+    id="leased_stock-field"
+    value="<%= @product.leased_stock %>"
+    />
+
+
+
+
+      <label for="stock_price-field">Stock Price:</label>
+      <input
+      type="number"
+      name="stock_price"
+      id="stock_price-field"
+      value="<%= @product.stock_price %>"
+      />
+
+
+
+
+      <label for="customer_id-field">Customer ID:</label>
+      <select class="" name="customer_id" id="customer_id-field">
+        <% @customers.each do |customer|  %>
+        <option <% "selected" if @product.customer_id == customer.id %>value="<%= customer.id  %>"> <%= customer.name  %></option>
+        <% end %>
+      </select>
+
+
+  <input type="submit" value = "Add new product">
+  </form>

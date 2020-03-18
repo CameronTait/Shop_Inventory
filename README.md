@@ -23,12 +23,13 @@ Build an app which allows a shopkeeper to track their shop's inventory. This is 
 2. In the seed file - create a dummy 'No customer' entry - DONE
 
 3. Create New Customers
-    - a form which will enable you to put in new customer details (name)
-    - Post that to the database so that it saves
+    - a form which will enable you to put in new customer details (name) - DONE
+    - Post that to the database so that it saves - DONE
 
 4. Create New Products
-    - a form which will be able to create a new product (including all the details)
-    - Make sure new products are assigned to the 'No Customer' entry
+    - a form which will be able to create a new product (including all the details) - DONE
+    - Make sure new products are assigned to the 'No Customer' entry - DONE
+
 
 
 
@@ -37,11 +38,36 @@ Build an app which allows a shopkeeper to track their shop's inventory. This is 
 
 6.  Display stock level warning
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Added dummy No Product, should add edit to change people to this after subscription ?
+
+
+
 7.  Delete customers
 
 8.  Delete products
 
-9.  Update products & customers?  
+9.  Delete & add products to customers?
+
+10.  Update products & customers?  
 
 
 

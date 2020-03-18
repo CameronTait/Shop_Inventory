@@ -67,5 +67,15 @@ product1 = Product.new({
 
 product1.save()
 
+product1 = Product.new({
+  "name" => "No Product",
+  "total_stock" => 500,
+  "leased_stock" => 0,
+  "stock_price" => 0,
+  "customer_id" => customer4.id
+  })
+
+product1.save
+
 binding.pry
 nil
