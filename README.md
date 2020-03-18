@@ -33,6 +33,19 @@ Build an app which allows a shopkeeper to track their shop's inventory. This is 
 
 
 
+5.  Display current stock
+
+6.  Display stock level warning
+
+7.  Delete customers
+
+8.  Delete products
+
+9.  Update products & customers?  
+
+
+
+
 
 
 
